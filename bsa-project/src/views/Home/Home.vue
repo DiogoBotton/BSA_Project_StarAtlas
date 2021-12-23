@@ -1,19 +1,18 @@
 <template>
   <div>
-      <Banner />
+    <Banner />
   </div>
 </template>
 
 <script>
-import Banner from "../../components/Banner/Banner.vue"
+import Banner from "../../components/Banner/Banner.vue";
 
 export default {
- components: {
+  components: {
     Banner,
   },
-}
+};
 </script>
 
 <style>
-
 </style>

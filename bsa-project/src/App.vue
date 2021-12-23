@@ -23,3 +23,13 @@ export default {
   }),
 };
 </script>
+
+<style>
+@font-face {
+  font-family: evolve-sans-bold;
+  src: url(./assets/fonts/MADEEvolveSansBold.otf);
+}
+li {
+  text-decoration: none;
+}
+</style>

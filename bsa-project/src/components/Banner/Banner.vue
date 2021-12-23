@@ -1,8 +1,8 @@
 <template>
-  <v-parallax dark src="../../assets/backgrounds/bgt01.webp" height="800">
+  <v-parallax dark src="../../assets/backgrounds/starAtlas.jpg" height="700">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <img src="../../assets/logos/AF_BSA_logotipo.png"/>
+          <img src="../../assets/logos/AF_BSA_logotipo.png" width="350em"/>
         </v-col>
       </v-row>
     </v-parallax>
