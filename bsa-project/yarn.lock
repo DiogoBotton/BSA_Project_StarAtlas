@@ -8338,6 +8338,11 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-responsive-video-background-player@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/vue-responsive-video-background-player/-/vue-responsive-video-background-player-1.2.2.tgz#13af1faa586f5676660be7b138b55c5bfa1502ae"
+  integrity sha512-noe0ElSJyF15vtAATXq1BgyqDBtw2UZMO5a/+9iHK3OwlNE7yiCtH29gKFKPrbffoZ/g28YwXB7XbH0IoYbshA==
+
 vue-router@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.5.3.tgz#041048053e336829d05dafacf6a8fb669a2e7999"

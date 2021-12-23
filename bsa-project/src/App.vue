@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar/Navbar.vue';
+import Navbar from "./components/Navbar/Navbar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     Navbar,
@@ -28,6 +28,27 @@ export default {
 @font-face {
   font-family: evolve-sans-bold;
   src: url(./assets/fonts/MADEEvolveSansBold.otf);
+}
+@font-face {
+  font-family: evolve-sans-light;
+  src: url(./assets/fonts/MADEEvolveSansLight.otf);
+}
+@font-face {
+  font-family: cinzel-decorative-regular;
+  src: url(./assets/fonts/CinzelDecorative-Regular.otf);
+}
+p {
+  font-family: evolve-sans-light;
+  font-size: larger;
+}
+h3 {
+  font-family: cinzel-decorative-regular;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+.font-button {
+  font-family: evolve-sans-light;
+  font-size: larger;
 }
 li {
   text-decoration: none;

@@ -25,7 +25,8 @@ export default {};
 <style>
 #background-navbar {
   --bs-bg-opacity: 1;
-  background-color: #0000007e !important;
+  background-color: #00000050 !important;
+  /* #0000007e */
 }
 *a {
   text-decoration: none;
@@ -51,6 +52,10 @@ export default {};
 }
 
 @media (max-width: 922px){
+  #background-navbar {
+  background-color: #000000a2 !important;
+}
+
   .navbar-item {
     display: unset;
     margin: unset;
