@@ -2,7 +2,7 @@
   <v-app>
     <Navbar />
 
-    <v-main>
+    <v-main class="dark-background-color">
       <router-view />
     </v-main>
   </v-app>
@@ -52,5 +52,10 @@ h3 {
 }
 li {
   text-decoration: none;
+}
+
+/* Colors */
+.dark-background-color {
+  background: #2b2b2b;
 }
 </style>

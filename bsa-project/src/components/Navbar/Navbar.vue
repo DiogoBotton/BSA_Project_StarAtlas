@@ -8,10 +8,10 @@
           <img src="../../assets/logos/AF_BSA_logotipo.png" width="120em" alt="Logo BSA" />
         </b-navbar-brand>
         <div class="navbar-item">
-          <b-nav-item class="px-5" href="#"><span class="nav-button">BSA</span></b-nav-item>
-          <b-nav-item class="px-5" href="#"><span class="nav-button">ALISTE-SE</span></b-nav-item>
-          <b-nav-item class="px-5" href="#"><span class="nav-button">ESTATUTO DA BSA</span></b-nav-item>
-          <b-nav-item class="px-5" href="#"><span class="nav-button">CONTATOS</span></b-nav-item>
+          <b-nav-item class="px-5" href="#home"><v-btn text dark rounded large class="nav-button">BSA</v-btn></b-nav-item>
+          <b-nav-item class="px-5" href="#"><v-btn text dark rounded large class="nav-button">ALISTE-SE</v-btn></b-nav-item>
+          <b-nav-item class="px-5" href="#"><v-btn text dark rounded large class="nav-button">ESTATUTO DA BSA</v-btn></b-nav-item>
+          <b-nav-item class="px-5" href="#contatos"><v-btn text dark rounded large class="nav-button">CONTATOS</v-btn></b-nav-item>
         </div>
         </div>
       </b-collapse>
