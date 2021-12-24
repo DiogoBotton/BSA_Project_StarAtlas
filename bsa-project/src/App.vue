@@ -40,6 +40,7 @@ export default {
 p {
   font-family: evolve-sans-light;
   font-size: larger;
+  text-shadow: 0.1em 0.1em 0.2em black;
 }
 h3 {
   font-family: cinzel-decorative-regular;
@@ -53,7 +54,10 @@ h3 {
 li {
   text-decoration: none;
 }
-
+.default-button {
+  color: white;
+  font-family: evolve-sans-bold;
+}
 /* Colors */
 .dark-background-color {
   background: #2b2b2b;
