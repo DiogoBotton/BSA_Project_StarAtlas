@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="lg" type="dark" fixed="top" id="background-navbar">
+    <b-navbar toggleable="lg" type="dark" fixed="top" id="background-navbar" :class="{'navbar--hidden': !showNavbar }">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav class="mx-auto">
@@ -19,18 +19,53 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      showNavbar: true,
+      lastScrollPosition: 0
+    }
+  },
+  methods: {
+    onScroll () {
+      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+      if (currentScrollPosition < 0) {
+        return
+      }
+
+      if(window.innerWidth <= 992){
+        this.showNavbar = true;
+        this.lastScrollPosition = currentScrollPosition
+        return
+      }
+
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
+        return
+      }
+      this.showNavbar = currentScrollPosition < this.lastScrollPosition
+      this.lastScrollPosition = currentScrollPosition
+    }
+  },
+  mounted () {
+  window.addEventListener('scroll', this.onScroll)
+},
+  beforeDestroy () {
+  window.removeEventListener('scroll', this.onScroll)
+}
+};
 </script>
 
 <style>
 #background-navbar {
   --bs-bg-opacity: 1;
-  background-color: #00000050 !important;
-  /* #0000007e */
+  background-color: #00000050 !important; /* #0000007e */
+  transform: translate3d(0, 0, 0);
+  transition: 0.1s all ease-out;
 }
-*a {
-  text-decoration: none;
+.navbar--hidden {
+  transform: translate3d(0, -100%, 0) !important;
 }
+
 .nav-button {
   color: white;
   font-family: evolve-sans-bold;
@@ -51,10 +86,10 @@ export default {};
   list-style: none;
 }
 
-@media (max-width: 922px){
+@media (max-width: 991px){
   #background-navbar {
-  background-color: #000000a2 !important;
-}
+    background-color: #000000a2 !important;
+  }
 
   .navbar-item {
     display: unset;
