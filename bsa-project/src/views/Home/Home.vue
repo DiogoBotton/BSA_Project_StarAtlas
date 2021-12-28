@@ -2,7 +2,7 @@
   <div>
     <video-background
       :src="require('@/assets/backgrounds/bgv5.mp4')"
-      style="max-height: 100%; height: 90vh"
+      style="max-height: 100%; height: 98vh"
       overlay="linear-gradient(45deg,#2a4ae430,#00168150)"
     >
       <v-container style="margin: auto">

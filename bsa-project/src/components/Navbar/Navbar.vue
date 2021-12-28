@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="lg" type="dark" fixed="top" id="background-navbar" :class="{'navbar--hidden': !showNavbar }">
+    <b-navbar toggleable="lg" type="dark" fixed="top" :id="alterNavbar ? 'background-navbar-scrolldown' : 'background-navbar'" :class="{'navbar--hidden': !showNavbar }">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav class="mx-auto">
@@ -23,6 +23,7 @@ export default {
   data(){
     return{
       showNavbar: true,
+      alterNavbar: false,
       lastScrollPosition: 0
     }
   },
@@ -30,6 +31,7 @@ export default {
     onScroll () {
       const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
       if (currentScrollPosition < 0) {
+        this.alterNavbar = false;
         return
       }
 
@@ -38,6 +40,10 @@ export default {
         this.lastScrollPosition = currentScrollPosition
         return
       }
+
+      // if(currentScrollPosition >= 100){
+      //   this.alterNavbar = true;
+      // }
 
       if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 40) {
         return
@@ -58,12 +64,19 @@ export default {
 <style>
 #background-navbar {
   --bs-bg-opacity: 1;
-  background-color: #00000050 !important; /* #0000007e */
+  background: linear-gradient(rgba(6, 7, 40), rgba(6, 7, 40, 0.355)) !important; /* #0000007e #00000050*/
   transform: translate3d(0, 0, 0);
-  transition: 0.1s all ease-out;
+  transition: 0.2s all ease-out;
+  padding: 1.5rem 0;
 }
 .navbar--hidden {
   transform: translate3d(0, -100%, 0) !important;
+}
+
+#background-navbar-scrolldown{
+  transition: 0.2s all ease-out;
+  background: linear-gradient(rgba(6, 7, 40), rgba(6, 7, 40, 0.355)) !important;
+  padding: 1.5rem 0;
 }
 
 .nav-button {
