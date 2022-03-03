@@ -8,10 +8,12 @@
           <img src="../../assets/logos/AF_BSA_logotipo.png" width="120em" alt="Logo BSA" />
         </b-navbar-brand>
         <div class="navbar-item">
-          <li class="nav-item px-5 nav-link"><v-btn text dark rounded large class="nav-button" href="#">BSA</v-btn></li>
           <li class="nav-item px-5 nav-link"><v-btn text dark rounded large class="nav-button" href="#">ALISTE-SE</v-btn></li>
+          <li class="nav-item px-5 nav-link"><v-btn text dark rounded large class="nav-button" href="#bsa">BSA</v-btn></li>
           <li class="nav-item px-5 nav-link"><v-btn text dark rounded large class="nav-button" href="#estatuto">ESTATUTO DA BSA</v-btn></li>
           <li class="nav-item px-5 nav-link"><v-btn text dark rounded large class="nav-button" href="#contatos">CONTATOS</v-btn></li>
+          <li class="nav-item px-5 nav-link"><v-btn text dark rounded large class="nav-button" href="https://forum.brazilianstaratlas.com/" target="_blank">FÓRUM</v-btn></li>
+          <li class="nav-item px-5 nav-link"><v-btn text dark rounded large class="nav-button" href="https://app.brazilianstaratlas.com/" target="_blank">LOGIN</v-btn></li>
         </div>
         </div>
       </b-collapse>

@@ -62,4 +62,10 @@ li {
 .dark-background-color {
   background: #2b2b2b;
 }
+
+@media (max-width: 991px){
+  p{
+    font-size: medium;
+  }
+}
 </style>
