@@ -14,34 +14,20 @@
           <img src="../../assets/logos/AF_BSA_logotipo.png" width="350em" />
         </div>
         <div class="text-center">
-          <v-btn elevation="1" rounded outlined dark x-large href="https://discord.com/invite/JhB7jNCqzU" target="_blank">
+          <v-btn
+            elevation="1"
+            rounded
+            outlined
+            dark
+            x-large
+            href="https://discord.com/invite/JhB7jNCqzU"
+            target="_blank"
+          >
             <span class="font-button">ALISTE-SE JÁ</span>
           </v-btn>
         </div>
       </v-container>
     </video-background>
-    <section id="bsa">
-      <v-parallax dark src="../../assets/backgrounds/l4.jpg" id="bsa_sobre">
-        <v-row align="center" justify="center">
-          <v-col class="text-center" cols="12">
-            <h3 class="text-center mt-10 pb-5">Sobre a BSA (Brazilian Star Atlas Alliance)</h3>
-            <p>
-              A BSA Brazilian Star Atlas Alliance teve seu início em Setembro de 2021 reunindo os entusiastas e grandes investidores de STAR ATLAS no Brasil. 
-              Somos uma guilda onde você encontrará abrigo, descontração e respeito e acima de tudo um grupo focado no sucesso financeiro no mundo Blockchain e play-to-earn, 
-              com objetivo de orientar e dar suporte nos vários caminhos que o mundo novo do Metaverso oferece aos seus membros. 
-              A BSA é uma DAC (guilda) formada por pessoas de várias nacionalidades e que hoje traz uma força extraordinária dentro do Star Atlas 
-              para todos os povos que desejam fazer parte dessa família, seja você terreno ou não, você fará parte dessa jornada de conquistas.
-            </p>
-            <p>
-              Já somos mais de 7.000 membros organizados em nosso DISCORD!
-              A BSA tem uma das maiores frotas do jogo com naves de todos os segmentos,  raridades e possuímos alianças com as principais organizações do Metaverso STAR ATLAS!
-              Estamos prontos não somente para proteger você! Te levaremos além! Embarque com a BSA nas explorações espaciais em busca de novos mundos, novas oportunidades de ganhos e diversão!
-              Se você já possui uma frota forte ou apenas uma X4! É um investidor procurando uma DAC com capacidade de escalar seus ganhos ou se você procura uma forma de entrar nesse metaverso e ainda não tem recursos, a BSA é o seu lugar!
-            </p>
-          </v-col>
-        </v-row>
-      </v-parallax>
-    </section>
     <section id="contatos">
       <v-sheet dark id="border-outlined">
         <v-container>
@@ -86,48 +72,61 @@
         </v-container>
       </v-sheet>
     </section>
+    <section id="bsa">
+      <v-parallax dark src="../../assets/backgrounds/l4.jpg" id="bsa_sobre">
+        <v-row align="center" justify="center">
+          <v-col class="text-center" cols="12">
+            <h3 class="text-center mt-10 pb-5">
+              Sobre a BSA (Brazilian Star Atlas Alliance)
+            </h3>
+            <p>
+              A BSA Brazilian Star Atlas Alliance teve seu início em Setembro de
+              2021 reunindo os entusiastas e grandes investidores de STAR ATLAS
+              no Brasil. Somos uma guilda onde você encontrará abrigo,
+              descontração e respeito e acima de tudo um grupo focado no sucesso
+              financeiro no mundo Blockchain e play-to-earn, com objetivo de
+              orientar e dar suporte nos vários caminhos que o mundo novo do
+              Metaverso oferece aos seus membros. A BSA é uma DAC (guilda)
+              formada por pessoas de várias nacionalidades e que hoje traz uma
+              força extraordinária dentro do Star Atlas para todos os povos que
+              desejam fazer parte dessa família, seja você terreno ou não, você
+              fará parte dessa jornada de conquistas.
+            </p>
+            <p>
+              Já somos mais de 7.000 membros organizados em nosso DISCORD! A BSA
+              tem uma das maiores frotas do jogo com naves de todos os
+              segmentos, raridades e possuímos alianças com as principais
+              organizações do Metaverso STAR ATLAS! Estamos prontos não somente
+              para proteger você! Te levaremos além! Embarque com a BSA nas
+              explorações espaciais em busca de novos mundos, novas
+              oportunidades de ganhos e diversão! Se você já possui uma frota
+              forte ou apenas uma X4! É um investidor procurando uma DAC com
+              capacidade de escalar seus ganhos ou se você procura uma forma de
+              entrar nesse metaverso e ainda não tem recursos, a BSA é o seu
+              lugar!
+            </p>
+          </v-col>
+        </v-row>
+      </v-parallax>
+    </section>
 
     <section id="estatuto">
-      <v-parallax src="../../assets/backgrounds/starAtlas.jpg" height="600">
+      <v-sheet dark id="border-outlined">
         <v-container class="pb-10 text-center">
           <h3 class="text-center mt-10 pb-5">Estatuto da BSA</h3>
-          <v-row align="row">
-            <v-card
-              class="mx-auto pt-2"
-              id="card-responsive"
-              dark
-              color="rgb(255, 255, 255, 0.2)"
-            >
-              <v-img
-                class="white--text align-end"
-                id="card-image"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2000px-Flag_of_Brazil.svg.png"
-              >
-              </v-img>
-
-              <v-card-text class="white--text">
-                <p>Estatuto em Português</p>
-
-                <p class="card-text">
-                  Leia e esteja bem familiarizado com o Estatuto da BSA, pois este
-                  é soberano e deve ser observado para que as propostas de OMDs
-                  sejam coerentes com o objetivo da DAC BSA, em sua missão de
-                  inclusão e favorecimento a todos os seus membros sem
-                  distinção.
-                </p>
-              </v-card-text>
-
-              <v-card-actions>
-                <v-btn class="default-button flex" text outlined>
-                  Download
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-
-            
+          <v-row>
+            <p class="card-text">
+              Leia e esteja bem familiarizado com o Estatuto da BSA, pois este é
+              soberano e deve ser observado para que as propostas de OMDs sejam
+              coerentes com o objetivo da DAC BSA, em sua missão de inclusão e
+              favorecimento a todos os seus membros sem distinção.
+            </p>
+            <v-col>
+              <v-btn class="default-button" text outlined> Download </v-btn>
+            </v-col>
           </v-row>
         </v-container>
-      </v-parallax>
+      </v-sheet>
     </section>
     <video-background
       :src="require('@/assets/backgrounds/bgv5.mp4')"
@@ -164,18 +163,15 @@ export default {
   height: 200px;
 }
 
-@media (max-width: 992px){
-  #card-responsive{
+@media (max-width: 992px) {
+  #card-responsive {
     max-width: 30vh;
   }
   #card-image {
     height: 100px;
   }
-  .card-text{
-    display: none;
-  }
-  #bsa_sobre{
-  height: 800px !important; 
+  #bsa_sobre {
+    height: 800px !important;
   }
 }
 </style>
