@@ -122,7 +122,15 @@
               favorecimento a todos os seus membros sem distinção.
             </p>
             <v-col>
-              <v-btn class="default-button" text outlined> Download </v-btn>
+              <v-btn
+                class="default-button"
+                text
+                outlined
+                target="_blank"
+                href="./files/ESTATUTO_BSA.pdf"
+              >
+                Download
+              </v-btn>
             </v-col>
           </v-row>
         </v-container>
@@ -145,6 +153,21 @@
 <script>
 export default {
   components: {},
+  methods: {
+    downloadEstatutoBsa() {
+      // OBS: Para funcionar, necessário deixar o arquivo na mesma pasta onde o arquivo index.html se encontra, normalmente na pasta "public"
+      fetch("./files/ESTATUTO_BSA.pdf").then(async (result) => {
+        const blob = await result.blob();
+        console.log(blob)
+        const anchor = window.document.createElement("a");
+
+        anchor.href = window.URL.createObjectURL(blob);
+        anchor.download = "ESTATUTO_BSA.pdf";
+        anchor.click();
+        window.URL.revokeObjectURL(anchor.href);
+      });
+    },
+  },
 };
 </script>
 
