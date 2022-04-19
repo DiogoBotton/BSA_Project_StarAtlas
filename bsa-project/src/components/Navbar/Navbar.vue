@@ -4,7 +4,7 @@
 
       <b-collapse id="nav-collapse" is-nav class="mx-auto">
       <div class="navbar-container">
-        <b-navbar-brand href="#" id="navbar-logo-bsa">
+        <b-navbar-brand href="/#" id="navbar-logo-bsa">
           <img src="../../assets/logos/AF_BSA_logotipo.png" width="120em" alt="Logo BSA" />
         </b-navbar-brand>
         <div class="navbar-item">
@@ -26,7 +26,7 @@
                   Utilidades
                 </v-btn>
               </template>
-              <v-list>
+              <v-list dark>
                 <v-list-item
                   v-for="(item, index) in utilsList"
                   :key="index"
