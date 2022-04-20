@@ -12,6 +12,7 @@
             :items="score"
             :search="search"
             :loading="isLoading"
+            :items-per-page="50"
             loading-text="Carregando... Por favor aguarde"
             item-key="mint"
             :footer-props="{
@@ -70,6 +71,7 @@
             :items="score"
             :search="search"
             :loading="isLoading"
+            :items-per-page="50"
             loading-text="Carregando... Por favor aguarde"
             item-key="mint"
             :footer-props="{
