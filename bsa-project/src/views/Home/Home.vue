@@ -11,7 +11,7 @@
           <h3>Venha fazer parte da maior Guilda do Star Atlas</h3>
         </div>
         <div class="text-center mt-10 pb-16">
-          <img src="../../assets/logos/AF_BSA_logotipo.png" width="350em" />
+          <img src="../../assets/logos/AF_BSA_logotipo.png" class="bsa-logo" />
         </div>
         <div class="text-center">
           <v-btn
@@ -143,7 +143,7 @@
     >
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <img src="../../assets/logos/AF_BSA_logotipo.png" width="350em" />
+          <img src="../../assets/logos/AF_BSA_logotipo.png" class="bsa-logo" />
         </v-col>
       </v-row>
     </video-background>
@@ -186,6 +186,10 @@ export default {
   height: 200px;
 }
 
+.bsa-logo {
+  width: 22em;
+}
+
 @media (max-width: 992px) {
   #card-responsive {
     max-width: 30vh;
@@ -195,6 +199,9 @@ export default {
   }
   #bsa_sobre {
     height: 800px !important;
+  }
+  .bsa-logo {
+    width: 18em;
   }
 }
 </style>

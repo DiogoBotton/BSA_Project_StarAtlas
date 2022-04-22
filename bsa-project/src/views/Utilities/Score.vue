@@ -43,15 +43,15 @@
               <b>ATLAS</b>
             </template>
             <template v-slot:item.rendimentos.semanal.liquido.atlas="{ item }">
-              {{ item.rendimentos.diario.liquido.usdc.toFixed(2) }}
+              {{ item.rendimentos.semanal.liquido.usdc.toFixed(2) }}
               <b>USDC</b> <br />
-              {{ item.rendimentos.diario.liquido.atlas.toFixed(2) }}
+              {{ item.rendimentos.semanal.liquido.atlas.toFixed(2) }}
               <b>ATLAS</b>
             </template>
             <template v-slot:item.rendimentos.mensal.liquido.atlas="{ item }">
-              {{ item.rendimentos.diario.liquido.usdc.toFixed(2) }}
+              {{ item.rendimentos.mensal.liquido.usdc.toFixed(2) }}
               <b>USDC</b> <br />
-              {{ item.rendimentos.diario.liquido.atlas.toFixed(2) }}
+              {{ item.rendimentos.mensal.liquido.atlas.toFixed(2) }}
               <b>ATLAS</b>
             </template>
             <template v-slot:no-data>
@@ -189,34 +189,40 @@ export default {
           class: "table-header",
         },
         {
-          text: "Valor",
+          text: "VWAP",
           value: "vwap",
           class: "table-header",
+          sortable: false
         },
         {
           text: "ROI Mensal",
           value: "roimensal",
           class: "table-header",
+          sortable: false
         },
         {
           text: "ROI em Meses",
           value: "roimeses",
           class: "table-header",
+          sortable: false
         },
         {
           text: "ROI Diário Líquido",
           value: "rendimentos.diario.liquido.atlas",
           class: "table-header",
+          sortable: false
         },
         {
           text: "ROI Semanal Líquido",
           value: "rendimentos.semanal.liquido.atlas",
           class: "table-header",
+          sortable: false
         },
         {
           text: "ROI Mensal Líquido",
           value: "rendimentos.mensal.liquido.atlas",
           class: "table-header",
+          sortable: false
         },
       ],
       headersConsumo: [
