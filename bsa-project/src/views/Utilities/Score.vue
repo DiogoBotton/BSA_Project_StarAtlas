@@ -236,18 +236,21 @@ export default {
           value: "consumoRecursos.diario.ammo",
           class: "table-header",
           divider: true,
+          sortable: false
         },
         {
           text: "Consumo Semanal",
           value: "consumoRecursos.semanal.ammo",
           class: "table-header",
           divider: true,
+          sortable: false
         },
         {
           text: "Consumo Mensal",
           value: "consumoRecursos.mensal.ammo",
           class: "table-header",
           divider: true,
+          sortable: false
         },
       ],
     };
